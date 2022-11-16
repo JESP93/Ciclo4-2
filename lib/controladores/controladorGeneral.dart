@@ -44,7 +44,7 @@ class controladorGeneral extends GetxController {
     pro[posicionEnComprar].cantidad = cantidadEnComprar;
   }
 
-////////////////////////////// COntrolador de Total a Pagar
+////////////////////////////// Controlador de Total a Pagar
   int calcularTotal() {
     int total = 0;
     for (var i = 0; i < pro.length; i++) {
