@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/controladores/controladorGeneral.dart';
 import 'package:get/get.dart';
 
-class paginaComprar extends StatefulWidget {
-  const paginaComprar({super.key});
+class paginaNuestrosProductos extends StatefulWidget {
+  const paginaNuestrosProductos({super.key});
 
   @override
-  State<paginaComprar> createState() => _paginaComprarState();
+  State<paginaNuestrosProductos> createState() =>
+      _paginaNuestrosProductosState();
 }
 
-class _paginaComprarState extends State<paginaComprar> {
+class _paginaNuestrosProductosState extends State<paginaNuestrosProductos> {
   controladorGeneral Control = Get.find();
 
   @override
@@ -49,7 +50,7 @@ class _paginaComprarState extends State<paginaComprar> {
                                 Control.cambiarCantidad(index, nuevacantidad);
                                 Control.pro.refresh();
                               },
-                              icon: Icon(Icons.arrow_circle_down)),
+                              icon: Icon(Icons.remove_circle_outline_outlined)),
                           VerticalDivider(),
                           IconButton(
                               onPressed: () {
@@ -58,7 +59,7 @@ class _paginaComprarState extends State<paginaComprar> {
                                 Control.cambiarCantidad(index, nuevacantidad);
                                 Control.pro.refresh();
                               },
-                              icon: Icon(Icons.arrow_circle_up))
+                              icon: Icon(Icons.add_circle_outline_outlined))
                         ],
                       ),
                     ),

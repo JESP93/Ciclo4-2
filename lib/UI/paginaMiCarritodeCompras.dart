@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/controladores/controladorGeneral.dart';
 import 'package:get/get.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
-class paginaMisProductos extends StatefulWidget {
-  const paginaMisProductos({super.key});
+class paginaMiCarritodeCompras extends StatefulWidget {
+  const paginaMiCarritodeCompras({super.key});
 
   @override
-  State<paginaMisProductos> createState() => _paginaMisProductosState();
+  State<paginaMiCarritodeCompras> createState() =>
+      _paginaMiCarritodeComprasState();
 }
 
-class _paginaMisProductosState extends State<paginaMisProductos> {
+class _paginaMiCarritodeComprasState extends State<paginaMiCarritodeCompras> {
   controladorGeneral Control = Get.find();
 
   @override
@@ -34,7 +36,7 @@ class _paginaMisProductosState extends State<paginaMisProductos> {
                               Control.pro[index].precio.toString() +
                               "  |  Cantidad : " +
                               Control.pro[index].cantidad.toString()),
-                          trailing: Text((Control.pro[index].cantidad +
+                          trailing: Text((Control.pro[index].cantidad *
                                   Control.pro[index].precio)
                               .toString()),
                         ),
@@ -49,7 +51,21 @@ class _paginaMisProductosState extends State<paginaMisProductos> {
                 fontSize: 20, fontWeight: FontWeight.bold, color: Colors.red),
           ),
           ElevatedButton.icon(
-              onPressed: () {}, icon: Icon(Icons.save), label: Text("Comprar"))
+              onPressed: () {
+                Alert(
+                    context: context,
+                    title: "Mensaje de Confirmación",
+                    desc: "Tu compra se ha realizado con Exito",
+                    buttons: [
+                      DialogButton(
+                          child: Text("Cerrar"),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          })
+                    ]).show();
+              },
+              icon: Icon(Icons.save),
+              label: Text("Comprar"))
         ]),
       ),
     );

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/UI/menu.dart';
 import 'package:flutter_application_1/UI/paginaAcercaDe.dart';
-import 'package:flutter_application_1/UI/paginaComprar.dart';
+import 'package:flutter_application_1/UI/paginaNuestrosProductos.dart';
 import 'package:flutter_application_1/UI/paginaInicio.dart';
-import 'package:flutter_application_1/UI/paginaMisProductos.dart';
+import 'package:flutter_application_1/UI/paginaMiCarritodeCompras.dart';
 import 'package:flutter_application_1/controladores/controladorGeneral.dart';
 import 'package:get/get.dart';
 
 List Paginas = [
   paginaInicio(),
-  paginaComprar(),
-  paginaMisProductos(),
+  paginaNuestrosProductos(),
+  paginaMiCarritodeCompras(),
   paginaAcercaDe()
 ];
 

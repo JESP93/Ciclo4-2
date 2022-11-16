@@ -11,29 +11,29 @@ class controladorGeneral extends GetxController {
     pro.add(productos(
         "001",
         "Audi",
-        "https://www.bajapress.com/api/image-from-sever/origin/media-manager/marcas-de-lujo-presentan-sus-novedades-en-semana-del-auto_1565996205.jpg",
-        50000,
+        "https://res.cloudinary.com/wired-de/image/upload/t_teaser_landscape/v1/0/488-nachfolger-mit-720-ps-und-klappdach-ferrari-f8-spider-2019__996227_jpg.jpg",
+        500000000,
         0));
 
     pro.add(productos(
         "002",
         "Bugatti",
         "https://www.bajapress.com/api/image-from-sever/origin/media-manager/marcas-de-lujo-presentan-sus-novedades-en-semana-del-auto_1565996205.jpg",
-        60000,
+        600000000,
         0));
 
     pro.add(productos(
         "003",
         "Ferrari",
-        "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/43896a93049697.5e5af1b811977.jpg",
-        50000,
+        "https://res.cloudinary.com/wired-de/image/upload/t_teaser_landscape/v1/0/488-nachfolger-mit-720-ps-und-klappdach-ferrari-f8-spider-2019__996227_jpg.jpg",
+        500000000,
         0));
 
     pro.add(productos(
         "004",
         "Mercedez",
         "https://www.bajapress.com/api/image-from-sever/origin/media-manager/marcas-de-lujo-presentan-sus-novedades-en-semana-del-auto_1565996205.jpg",
-        50000,
+        400000000,
         0));
     // TODO: implement onInit
     super.onInit();
